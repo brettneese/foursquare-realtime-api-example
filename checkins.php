@@ -61,7 +61,7 @@ if (!$con)
   die('Could not connect: ' . mysql_error());
   }
 
-mysql_select_db("kikrfoursquare1_phpfogapp_com", $con);
+mysql_select_db("MYSQL_DATABASE", $con); //insert your database name here
 
 // to make things easy, I labeled each variable with the name of it's appropriate mysql column. I also used the jquery response as an template for naming my variables. For instance, Venue:Location:City == $venue_location_city
  
