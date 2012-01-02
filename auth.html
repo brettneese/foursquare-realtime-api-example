@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auth<title>
+  <style type="text/css">
+    html { height: 100%; }
+    body { height: 100%; margin: 0; padding: 0; }
+  </style>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.ba-bbq.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+  <script type="text/javascript">
+  //<![CDATA[
+  var client_id c= 'CLIENT ID';
+  var callback_url = 'http://kikrfoursquare1.phpfogapp.com/examples/auth_alt.html';
+
+  /* Attempt to retrieve access token from URL. */
+  if ($.bbq.getState('access_token')) {
+    var token = $.bbq.getState('access_token');
+    $.bbq.pushState({}, 2)
+  } else if ($.bbq.getState('error')) {
+  } else {
+    /* Redirect for foursquare authentication. */
+    window.location.href = 'https://foursquare.com/oauth2/authenticate?client_id=' + client_id
+    + '&response_type=token&redirect_uri=' + callback_url;
+  }  
+  //]]>
+  </script> 
+</head>
+<body>
+  <div> You've successfully authenticated with Foursquare! Now, go build it.</div>
+</body>
+</html>
