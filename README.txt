@@ -1,6 +1,6 @@
 # php-foursquare-realtime
 
-As part of a project I'm working on, I needed to make use Foursquare's new-ish Realtime API for pushing checkins to my server. I looked around the internet, and found the official and unoffical documentation lacking. Furthermore, I couldn't find any example code using PHP, and I failed at getting the example Python code I did find to work.
+As part of a project I'm working on, I needed to make use Foursquare's new-ish Realtime API (https://developer.foursquare.com/overview/realtime) for pushing checkins to my server. I looked around the internet, and found the official and unoffical documentation lacking. Furthermore, I couldn't find any example code using PHP, and I failed at getting the example Python code I did find to work.
 
 So I built my own example, and am releasing the code for other curious new programmers. I admit what I built will likely be rather simplistic for any skilled PHP programmer, but, hey, I'm learning.
 
